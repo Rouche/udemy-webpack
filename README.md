@@ -5,6 +5,11 @@ You can download this repository by using the green `Clone or Download` button o
 
 If you want to download it using git, copy paste the link that is presented to you, then run the following at your terminal:
 
+https://rallycoding.com/
+
+
+-Webpack Reminders
+
 ```
 git clone https://github.com/StephenGrider/WebpackProject.git
 cd WebpackProject
@@ -31,6 +36,32 @@ AWS
 npm install -g s3-website
 s3-website create udemy-webpack
 s3-website deploy dist
+```
+
+AWS Elastic Beanstalk
+```
+npm install python 3.6+ with 64bit installer
+pip install --upgrade --user awsebcli
+Upgrade: pip install --user --upgrade awsebcli
+eb init
+Crendentials : inside AWS ->Profile->Security Credentials->NEw Access key
+eb create
+eb open
+eb setenv NODE_ENV=production
+eb terminate
+```
+
+
+Heroku
+```
+heroku create
+heroku login
+Retrieve token with : heroku auth:token
+git push heroku master (cancel git window)
+Username for 'https://git.heroku.rouche@gmail.com => Type in "blank"
+Password for 'https://git.heroku.rouche@gmail.com => Retrieved token
+heroku log
+heroku open
 ```
 
 Express
